@@ -40,7 +40,7 @@ body {
 #tabs > ul > li  {
 	text-decoration: none;
 	display: inline-block;
-	width: 17%;
+	width: 15%;
 	font-size: 18px;
 	text-align: center;
 	text-decoration: none;
@@ -60,6 +60,7 @@ body {
 .highlighted {
 	background-color: green;
 }
+
 hr {
 	margin-top: 2em;
 }
