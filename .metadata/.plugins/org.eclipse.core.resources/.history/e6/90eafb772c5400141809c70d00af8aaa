@@ -1,0 +1,49 @@
+package matrixPackage;
+
+import javax.swing.*;
+import java.awt.*;
+import java.util.*;
+
+public class EchelonForm { //extends JApplet {
+	/*public void init() {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				JLabel label = new JLabel("Label");
+				add(label);
+				
+				//JTextfield, stuff
+			}
+		});
+	}*/
+	
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		System.out.println("Please input the matrix, one row at a time. Separate each entry with a space. Type X on a single line to stop.");
+		String nums = in.nextLine();
+		int[][] matrix = new int[100][100];
+		int rowNumber = 0;
+		while (!nums.contains("X") && !nums.contains("x")) {
+			String[] row = nums.split(" ");
+			for (int i = 0; i < row.length; i++) {
+				if (i < 100) {
+					matrix[rowNumber][i] = Integer.parseInt(row[i]);
+				}
+			}
+			rowNumber++;
+			nums = in.nextLine();
+		}
+		
+		for (int k = 0; k < 100; k++) {
+			boolean zeroRow = true;
+			for (int m = 0; m < 100; m++) {
+				if (matrix[k][m] != 0) {
+					System.out.print(matrix[k][m] + " ");
+					zeroRow = false;
+				}
+			}
+			if (!zeroRow) {
+				System.out.println();
+			}
+		}
+	}
+}

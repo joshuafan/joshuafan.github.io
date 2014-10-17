@@ -1,0 +1,83 @@
+package matrixPackage;
+
+import javax.swing.*;
+import java.awt.*;
+import java.util.*;
+
+public class EchelonForm { //extends JApplet {
+	/*public void init() {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				JLabel label = new JLabel("Label");
+				add(label);
+				
+				//JTextfield, stuff
+			}
+		});
+	}*/
+	
+	public static final int MAX_DIMENSION = 100;
+	
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		System.out.println("Please input the matrix, one row at a time. Separate each entry with a space. Type X on a single line to stop.");
+		String nums = in.nextLine();
+		int[][] matrix = new int[MAX_DIMENSION][MAX_DIMENSION];
+		int rowNumber = 0;
+		while (!nums.contains("X") && !nums.contains("x")) {
+			String[] row = nums.split(" ");
+			for (int i = 0; i < row.length; i++) {
+				if (i < MAX_DIMENSION) {
+					matrix[rowNumber][i] = Integer.parseInt(row[i]);
+				}
+			}
+			rowNumber++;
+			nums = in.nextLine();
+		}
+		
+		print(matrix);
+		int[][] reducedMatrix = rowReduce(matrix);
+		print(reducedMatrix);
+	}
+	
+	public static int[][] eliminateExtraZeroes(int[][] matrix) {
+		int xRange = 0;
+		int yRange = 0;
+		for (int i = 0; i < MAX_DIMENSION; i++) {
+			for (int j = 0; j < MAX_DIMENSION; j++) {
+				if (matrix[i][j] != 0) {
+					xRange = Math.max(i, xRange);
+					yRange = Math.max(j, yRange);
+				}
+			}
+		}
+		
+		int[][] newMatrix = new int[xRange][yRange];
+		for (int i = 0; i < xRange; i++) {
+			for (int j = 0; i < yRange; j++) {
+				newMatrix[i][j] = matrix[i][j];
+			}
+		}
+		return newMatrix;
+	}
+	public static void print(int[][] matrix) {
+		for (int k = 0; k < MAX_DIMENSION; k++) {
+			boolean zeroRow = true;
+			for (int m = 0; m < 100; m++) {
+				if (matrix[k][m] != 0) {
+					System.out.print(matrix[k][m] + " ");
+					zeroRow = false;
+				}
+			}
+			if (!zeroRow) {
+				System.out.println();
+			}
+		}
+	}
+	
+	public static int[][] rowReduce(int[][] matrix) {
+		int[][] rowReduced = matrix;
+		
+		
+	}
+}
