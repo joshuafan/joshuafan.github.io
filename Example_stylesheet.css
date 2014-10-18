@@ -1,40 +1,42 @@
-/*html {
-	background-color: #EBEBE0;
-}*/
-
 body {
 	font: 11pt "Segoe UI", "Arial", sans-serif;
+	width: 1280px;
+	margin: 0 auto 0 auto;
 }
 
 #backgroundpic {
-	margin-left: auto;
-	margin-right: auto;
 	position: relative;
-	width: 100%;
 }
 
 #pic {
-	margin-left: auto;
-	margin-right: auto;
+	position: relative;
+	margin: 0 auto 0 auto;
+	width: 1280px;
+	height: 318px;
 }
 
-#header {
-	position: absolute;
-	top: 9em;
+#tabs {
+	position: relative;
+	width: 1280px;
+	top: -3em;
+	margin: 0 auto 0 auto;
 	text-align: center;
-	width: 100%;
 }
 
 #websitename {
+	width: 1280px;
 	text-align: center;
 	font-size: 60px;
 	color: white;
+	position: absolute;
+	top: 120px;
 }
 
 #tabs > ul {
+	margin: 0 auto 0 auto;
+	position: relative;
 	list-style-type: none;
 	text-align: center;
-	margin-left: -3em;
 }
 
 #tabs > ul > li  {
@@ -44,8 +46,8 @@ body {
 	font-size: 18px;
 	text-align: center;
 	text-decoration: none;
-	color: white;
 	padding: 5px;
+	color: white;
 }
 
 #tabs > ul > li > a {
@@ -53,8 +55,6 @@ body {
 	color: white;
 	font-size: 18px;
 	text-align: center;
-	padding-top: 5px;
-	padding-bottom: 15px;
 }
 
 .highlighted {
@@ -89,8 +89,9 @@ h4 {
 	float: left;
 	position: relative;
 	display: inline-block;
+	margin-left: 5%;
 	margin-top: 10px;
-	margin-right: 10px;
+	margin-right: 3%;
 	margin-bottom: 20px;
 	width: 25%;
 	background-color: #FFFFCC;
@@ -101,9 +102,9 @@ h4 {
 #main {
 	position: relative;
 	display: inline-block;
-	width: 60%;
-	padding-left: 20px;
+	width: 62%;
 	padding-top: 10px;
+	margin-bottom: 4em;
 }
 
 table {
@@ -133,8 +134,9 @@ textarea {
 }
 
 .checkersMain {
-	margin-left: 15%;
-	margin-right: 15%;
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-bottom: 4em;
 }
 
 .attention {
