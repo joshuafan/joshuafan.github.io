@@ -1,34 +1,54 @@
+<!DOCTYPE html PUBLIC "-W3C//DTD XHTML 1.1//EN"
+		"http://w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
-		<title>Checkers</title>
-		<link href="Example_stylesheet.css" type="text/css" rel="stylesheet" />
-		<script src="example_javascript.js" type="text/javascript"></script>
+		<title>Joshua Fan's website</title>
+		<link href="PersonalWebsiteStylesheet.css" type="text/css" rel="stylesheet" />
 		<meta name="description" content="Joshua Fan's website"/>
 		<meta name="keywords" content="transportation, transit, environment, geography, computer science"/>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	</head>
 
 	<body>
-		<div id="backgroundpic">
-			<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Mount_Rainier_panorama_2.jpg/1280px-Mount_Rainier_panorama_2.jpg" id="pic" />
-			<h1 id="websitename">Joshua Fan's website</h1>
+		<div id="background_picture_space">
+			<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Mount_Rainier_panorama_2.jpg/1280px-Mount_Rainier_panorama_2.jpg" id="background_picture" />
 		</div>
 		
+		<p id="website_name"><a href="index.html">Joshua Fan's website</a></p>
 		<div id="tabs">
 			<ul>
-				<li id="first"><a href="index.html"><b>Home</b></a></li>
-				<li class="highlighted"><b>Projects</b></li>
-				<li><a href="Interests.html"><b>Interests</b></a></li>
-				<li><a href="Resume.html"><b>R&#233;sum&#233;</b><a></li> <!--resume-->
+				<li><a href="index.html">Home</a></li>
+				<li><a href="Projects.html">Projects</a></li>
+				<li><a href="Interests.html">Interests</a></li>
+				<li><a href="Resume.html">R&#233;sum&#233;<a></li> <!--resume-->
+				<li><a href="Contact.html">Contact me</a></li>
 			</ul>
 		</div>
 		
-		<div class="checkersMain">
-			<h1>Checkers game</h1>
-			<p class="attention"><b>Note: you may need to adjust your Java security settings to use this applet (go to Java > Configure Java > Security).</b></p>
+		<div id="aboutme">
+			<h2>About me</h2>
+			<p>Joshua Fan is a junior at the University of Washington in Seattle, majoring in computer science and minoring in mathematics and geography. In addition to these 
+						fields, I am also interested in topics such as transportation planning, environmental issues, map design, and education. I love learning new technologies, 
+						expanding my knowledge, and solving challenging problems. 
+						I also enjoy playing the piano and the clarinet, reading about miscellaneous topics on the internet, travelling, hiking, and playing tennis.</p>
+			<p><em>Explore my <a href="Interests.html">interests</a>, view my <a href="Projects.html">projects</a>, or go over my <a href="Resume.html">r&#233;sum&#233</a> here on my website!</em></p>
+			<p><b>Email:</b> jyf2(at)uw.edu<br><b>Links:</b> <a href="https://www.linkedin.com/pub/joshua-fan/89/3a7/654">LinkedIn</a> |
+								<a href="https://github.com/joshuafan">GitHub</a> |
+								<a href="https://www.facebook.com/joshua.yongshin">Facebook</a></p>
+		</div>
+		<div id="main">
+			<h2>Checkers game</h2>
 			
 			<p>This is an implementation of a game of checkers against a primitive AI using Java, including event-handling and graphics/Swing. Check out
 			the code on <a href="https://github.com/joshuafan/Checkers-Applet">Github</a>.</p> 
-			<applet code="CheckersPackage/CheckersMain.class" width="400" height="510">If your browser could show Java, you would see an applet here</applet>
+			
+			<script src="https://www.java.com/js/deployJava.js"></script>
+			<script>
+				var attributes = {code:'checkersPackage/CheckersApplet.class', width:400, height:520};
+				var parameters = { jnlp_href: 'CheckersApplet.jnlp' }; 
+				var version = '1.6';
+				deployJava.runApplet(attributes, parameters, version);
+			</script>
 			
 			<h4>Rules</h4>
 				<p>Checkers is a board game for two players, "Black" and "Red." Each player starts with 12 pieces, which can ONLY move on the light squares. On his/her turn, each player can move one piece.

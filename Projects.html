@@ -1,50 +1,69 @@
+<!DOCTYPE html PUBLIC "-W3C//DTD XHTML 1.1//EN"
+		"http://w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
-		<title>Projects</title>
-		<link href="Example_stylesheet.css" type="text/css" rel="stylesheet" />
-		<script src="example_javascript.js" type="text/javascript"></script>
+		<title>Joshua Fan's website</title>
+		<link href="PersonalWebsiteStylesheet.css" type="text/css" rel="stylesheet" />
 		<meta name="description" content="Joshua Fan's website"/>
 		<meta name="keywords" content="transportation, transit, environment, geography, computer science"/>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	</head>
 
 	<body>
-		<div id="backgroundpic">
-			<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Mount_Rainier_panorama_2.jpg/1280px-Mount_Rainier_panorama_2.jpg" id="pic" />
-			<h1 id="websitename">Joshua Fan's website</h1>
+		<div id="background_picture_space">
+			<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Mount_Rainier_panorama_2.jpg/1280px-Mount_Rainier_panorama_2.jpg" id="background_picture" />
 		</div>
 		
+		<p id="website_name"><a href="index.html">Joshua Fan's website</a></p>
 		<div id="tabs">
 			<ul>
-				<li id="first"><a href="index.html"><b>Home</b></a></li>
-				<li class="highlighted"><b>Projects</b></li>
-				<li><a href="Interests.html"><b>Interests</b></a></li>
-				<li><a href="Resume.html"><b>R&#233;sum&#233;</b><a></li> <!--resume-->
+				<li><a href="index.html">Home</a></li>
+				<li><a href="Projects.html" class="selected_tab">Projects</a></li>
+				<li><a href="Interests.html">Interests</a></li>
+				<li><a href="Resume.html">R&#233;sum&#233;<a></li> <!--resume-->
+				<li><a href="Contact.html">Contact me</a></li>
 			</ul>
 		</div>
-	
+		
 		<div id="aboutme">
-			<h1>About me</h1>
-			<p>Joshua Fan is a sophomore at the University of Washington in Seattle, studying computer science and geography. In addition to these fields, he is also interested in topics such as transportation planning, environmental issues, economic development, and education. Some of his other hobbies include playing the piano and the clarinet, reading about miscellaneous topics on the internet, eating, and travelling.</p>
+			<h2>About me</h2>
+			<p>Joshua Fan is a junior at the University of Washington in Seattle, majoring in computer science and minoring in mathematics and geography. In addition to these 
+						fields, I am also interested in topics such as transportation planning, environmental issues, map design, and education. I love learning new technologies, 
+						expanding my knowledge, and solving challenging problems. 
+						I also enjoy playing the piano and the clarinet, reading about miscellaneous topics on the internet, travelling, hiking, and playing tennis.</p>
 			<p><em>Explore my <a href="Interests.html">interests</a>, view my <a href="Projects.html">projects</a>, or go over my <a href="Resume.html">r&#233;sum&#233</a> here on my website!</em></p>
-			<p>If you would like to contact me, please email me at jyf2@uw.edu.</p>
+			<p><b>Email:</b> jyf2(at)uw.edu<br><b>Links:</b> <a href="https://www.linkedin.com/pub/joshua-fan/89/3a7/654">LinkedIn</a> |
+								<a href="https://github.com/joshuafan">GitHub</a> |
+								<a href="https://www.facebook.com/joshua.yongshin">Facebook</a></p>
 		</div>
 		
 		<div id="main">
-			<h1>Projects</h1>
-					<h3><a href="Checkers.html">Checkers</a></h3>
-						<p>I implemented a game of checkers as a Java applet. I made this applet primarily to practice graphics programming and event handling using Java, which were topics that
-								were not covered very much in the Introductory Java class I took. I had to come up with an adequate object-oriented organizational
-								structure to handle the board and moves.
+			<h2>Projects</h2>
+				<h3><a href="Checkers.html">Checkers</a></h3>
+					<p>I implemented a game of checkers as a Java applet. I made this applet primarily to practice graphics programming and event handling using Java, which were topics that
+							were not covered very much in the Introductory Java class I took. I had to come up with an adequate object-oriented organizational
+							structure to handle the board and moves.</p>
+					
+					<p><em><a href="https://github.com/joshuafan/Checkers-Applet">View source code</a></em></p>
+				
+				<h3><a href="QuizApp.html">Quiz app </a></h3>
+					<p>I am working on a <a href="QuizApp.html">"quiz" app</a> using Javascript/JQuery that allows users to quiz themselves on various topics, under various settings. Although it is functional already, I am still
+							working on adding features to the app, such as allowing users to create their own quizzes, and an algorithm that helps users learn the material.</p>
+					<p><em><a href="https://github.com/joshuafan/joshuafan.github.io">View source code</a></em></p></em></p>
+					
+				<h3>Personal website</h3>
+					<p>I designed this website mostly from scratch using self-taught web programming skills, including HTML, CSS, and Javascript. It showcases my projects, interests, and r&#233;sum&#233.</p>
+					<p><em><a href="https://github.com/joshuafan/joshuafan.github.io">View source code</a></em></p></em></p>
+					
+				<h3>Word frequency analyzer/comparator</h3>
+					<p>For my data structures class, I created a program (with a partner) that compares word frequencies in given text files to compute a value representing the similarity of two texts.
+							This program can be used to predict who wrote a particular text, by comparing its word-frequency "signature" to other texts by the candidate authors.
+							This involved implementing and using a variety of data structures (including a self-balancing binary tree, hashtable, a modified form of a linked list, and
+							a max-heap) and sorting algorithms (such as merge sort, insertion sort, and heap sort).
 						
-						<p><em>You can view the code on my <a href="https://github.com/joshuafan">Github</a> account.</em></p>
-											
-					<h3>Personal website</h3>
-						<p>I designed this website using HTML, CSS, and Javascript. This website is still under construction as I continue to teach myself more about web programming. Currently, it 
-								illustrates CSS formatting and other basics of HTML/CSS, and some beginning Javascript for "games".
-						<p><em>You can view the code on my <a href="https://github.com/joshuafan">Github</a> account.</em></p>
-						
-					<h3>Anagram Solver</h3>
-						<p>As a class assignment, I used data structures such as maps, lists, and implemented my own data structure (LetterInventory) to find all of the possible words that could be made from a given string.</p> 
+				<h3>Search engine and web server</h3>
+					<p>I developed a file search engine in C/C++, as well as a web server to process user queries using the search engine. To speed up query processing, I implemented a hash table in C, and then used
+							an inverted-index to pre-process the files to be searched into index files. This involved a fair amount of low-level pointer manipulation.</li>
 		</div>				
 	</body>
 </html>

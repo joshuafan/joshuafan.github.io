@@ -1,106 +1,135 @@
+<!DOCTYPE html PUBLIC "-W3C//DTD XHTML 1.1//EN"
+		"http://w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
-		<title>R&#233;sum&#233</title>
-		<link href="Example_stylesheet.css" type="text/css" rel="stylesheet" />
+		<title>Joshua Fan's website</title>
+		<link href="PersonalWebsiteStylesheet.css" type="text/css" rel="stylesheet" />
 		<meta name="description" content="Joshua Fan's website"/>
 		<meta name="keywords" content="transportation, transit, environment, geography, computer science"/>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	</head>
 
 	<body>
-		<div id="backgroundpic">
-			<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Mount_Rainier_panorama_2.jpg/1280px-Mount_Rainier_panorama_2.jpg" id="pic" />
-			<h1 id="websitename">Joshua Fan's website</h1>
+		<div id="background_picture_space">
+			<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Mount_Rainier_panorama_2.jpg/1280px-Mount_Rainier_panorama_2.jpg" id="background_picture" />
 		</div>
 		
+		<p id="website_name"><a href="index.html">Joshua Fan's website</a></p>
 		<div id="tabs">
 			<ul>
-				<li id="first"><a href="index.html"><b>Home</b></a></li>
-				<li><a href="Projects.html"><b>Projects</b></a></li>
-				<li><a href="Interests.html"><b>Interests</b></a></li>
-				<li class="highlighted"><b>R&#233;sum&#233;</b></li> <!--resume-->
+				<li><a href="index.html">Home</a></b></li>
+				<li><a href="Projects.html">Projects</a></li>
+				<li><a href="Interests.html">Interests</a></li>
+				<li><a href="Resume.html" class="selected_tab">R&#233;sum&#233;</a></li> <!--resume-->
+				<li><a href="Contact.html">Contact me</a></li>
 			</ul>
 		</div>
 		
 		<div id="aboutme">
-			<h1>About me</h1>
-			<p>Joshua Fan is a sophomore at the University of Washington in Seattle, studying computer science and geography. In addition to these fields, he is also interested in topics such as transportation planning, environmental issues, economic development, and education. Some of his other hobbies include playing the piano and the clarinet, reading about miscellaneous topics on the internet, eating, and travelling.</p>
+			<h2>About me</h2>
+			<p>Joshua Fan is a junior at the University of Washington in Seattle, majoring in computer science and minoring in mathematics and geography. In addition to these 
+						fields, I am also interested in topics such as transportation planning, environmental issues, map design, and education. I love learning new technologies, 
+						expanding my knowledge, and solving challenging problems. 
+						I also enjoy playing the piano and the clarinet, reading about miscellaneous topics on the internet, travelling, hiking, and playing tennis.</p>
 			<p><em>Explore my <a href="Interests.html">interests</a>, view my <a href="Projects.html">projects</a>, or go over my <a href="Resume.html">r&#233;sum&#233</a> here on my website!</em></p>
-			<p>If you would like to contact me, please email me at jyf2@uw.edu.</p>
+			<p><b>Email:</b> jyf2(at)uw.edu<br><b>Links:</b> <a href="https://www.linkedin.com/pub/joshua-fan/89/3a7/654">LinkedIn</a> |
+								<a href="https://github.com/joshuafan">GitHub</a> |
+								<a href="https://www.facebook.com/joshua.yongshin">Facebook</a></p>
 		</div>
 		
 		<div id="main">
-			<h1>R&#233;sum&#233;</h1>
-				<p><em>Note: a PDF, Word, or printed version is available upon request.</em></p>
+			<h2>R&#233;sum&#233;</h2>
+				<p><b>Note: my r&#233;sum&#233 is also available as a <a href="Joshua Fan resume.pdf">PDF</a>.</b></p>
 			<div id="resume">
-					<p><b>Email:</b> jyf2(at)uw.edu</p>
-					<p><b>Phone:</b> (425)-628-7677</p>
+					<hr />
+					<h3>Contact information</h3>
+					<p><b>Email:</b> jyf2(at)uw.edu<br><a href="https://www.linkedin.com/pub/joshua-fan/89/3a7/654">LinkedIn</a> |
+								<a href="https://github.com/joshuafan">GitHub</a> |
+								<a href="https://www.facebook.com/joshua.yongshin">Facebook</a></p>
 					<p></p>
 					<hr />
 					<h3>Education</h3>
 						<p><b>University of Washington</b>, Seattle, WA (2013-present)</p>
 						<ul>
 							<li><b>B.S. Computer Science,</b> <em>expected July 2017</em></li>
-							<li><b>4.00 GPA</b> (cumulative)</li>
+							<li><b>Minors</b> (planned): Mathematics, Geography</b></li>
+							<li><b>3.99 GPA</b> (cumulative)</li>
 							<li><b>Relevant coursework:</b> <ul>
-								<li>Computer Programming in Java (CSE 142/143), Calculus (MATH 124/125/126), Foundations of Computing I/Discrete Mathematics (CSE 311), Matrix Algebra (MATH 308)</li>
-								<li>Currently taking: Data Abstractions (CSE 332), Hardware/Software Interface (CSE 351), Systems and Software Tools (CSE 390a)</li>
+								<li>Systems Programming (CSE 333)</li>
+								<li>Data Abstractions (CSE 332)</li>
+								<li>Hardware/Software Interface (CSE 351)</li>
+								<li>Foundations of Computing I/Discrete Mathematics (CSE 311)</li>
+								<li>Foundations of Computing II/Probability (CSE 312)</li>
+								<li>Matrix Algebra (MATH 308)</li>
+								<li>Unix System and Software Tools (CSE 390a)</li>
+								<li>Computer Programming in Java (CSE 142/143)</li>
+								<li>Intro to GIS Mapping (GEOG 360)</li>
+								<li><b>Currently taking:</b> Software Design and Implementation (CSE 331)</li>
 							</ul>
 						</ul>
 					<p></p>	
 					<hr />
+					<h3>Experience</h3>
+						<p><b>Software Design Engineer Intern</b> at <b>BitTitan</b> (June-September 2015)</p>
+						<ul>
+							<li>Implemented an in-memory data migration provider in C#, and used it to efficiently test a crucial object (that executes mailbox migrations) without relying on network connections and different data formats</li>
+							<li>Improved the performance of a key method by 60%, by optimizing redundant SQL queries/database calls</li>
+						</ul>
+						
+						<p><b>Teaching Assistant</b> at <b>University of Washington Computer Science & Engineering</b> (September 2015-present)</p>
+						<ul>
+							<li>Assisted teaching a Probability/Foundations of Computing course</li>
+							<li>Communicated challenging concepts effectively to students in classroom, office hours, and grading</li>
+						</ul>
+						
+						<p><b>Research Assistant</b> at <b>UW Computing for Development Lab</b> (March-June 2015)</p>
+						<ul>
+							<li>Helped redesign the “mPneumonia” app, which helps public health workers in India and Ghana easily collect data and survey patients according to standard medical protocol</li>
+							<li>Collaborated with PATH (global health company) to improve survey logic and optimize user experience</li>
+						</ul>
+						
+					<hr />
 					<h3>Projects</h3>
-						<p><b><a href="Projects.html#Checkers">Checkers game applet</a></b> (see <a href="https://github.com/joshuafan/Checkers-Applet">code</a>)</p>
+						<p><b>Word frequency analyzer/comparator</b> (Java)</p>
+						<ul>
+							<li>Given text files, compares word frequencies to compute a value representing the similarity of two texts</li>
+							<li>Employed a variety of self-implemented data structures and sorting algorithms</li>
+						</ul>
+						
+						<p><b>Search engine and web server</b> (C, C++)</p>
+						<ul>
+							<li>Developed a file search engine, as well as a web server to process user queries using the search engine</li>
+							<li>Used hash-tables and index files to speed up processing; utilized low-level pointer manipulation and system calls</li>
+						</ul>
+						
+						<p><b><a href="Projects.html#Checkers">Checkers game applet</a></b> (Java; see <a href="https://github.com/joshuafan/Checkers-Applet">code</a>)</p>
 						<ul>
 							<li>Used object-oriented design to program a game of checkers as a Java applet</li>
 							<li>Applied self-taught graphics programming (Swing) and event handling skills to implement a graphical-user-interface</li>
 							<li>Incorporated a simple AI for a computer player using recursive backtracking</li>
-
 						</ul>
 						
-						<p><b>Grep implementation in Java</b></p>
+						<p><b>Grep implementation</b> (Java)</p>
 						<ul>
 							<li>Built a program that searches a text file for lines matching a given regular expression</li>
 							<li>Wrote recursive functions and a context-free grammar to convert any regular expression into corresponding non-deterministic finite automaton (finite state machine) object</li>
 						</ul>
 						
-						<p><b>Personal website</b> (in progress; see <a href="https://github.com/joshuafan/joshuafan.github.io">code</a>)</p>
+						<p><b>Personal website</b>--<em>in progress</em> (Javascript, HTML/CSS; see <a href="https://github.com/joshuafan/joshuafan.github.io">code</a>)</p>
 						<ul>
 							<li>Utilized HTML, CSS formatting and styling, and JavaScript to create an attractive personal website showcasing interests, projects, and resume </li>
-							<li>Includes a JavaScript “quiz” web app involving DOM manipulation, event handling, and HTML forms that allows users to quiz themselves on certain topics <em>(under development)</em></li>
-
-						</ul>
-
-						<p><b>Anagram Solver</b></p>
-						<ul>
-							<li>Returns the combinations of words that can be formed from the letters of a user-inputted string</li>
-							<li>Implemented a recursive algorithm using data structures such as maps, sets, and lists in Java</li>
+							<li>Includes a JavaScript <a href="QuizApp.html">quiz web app</a> involving DOM manipulation, event handling, and HTML forms that allows users to quiz themselves on certain topics <em>(under development)</em></li>
 						</ul>
 					<hr />
+					
 					<h3>Languages and technologies</h3>
 						<ul>
-							<li><b>Proficient:</b> Java</li>
-							<li><b>Basic knowledge:</b> Python, HTML/CSS, JavaScript, PHP, C, SQL/relational databases</li>
+							<li><b>Significant experience:</b> Java, C#, C</li>
+							<li><b>Some familiarity:</b> HTML/CSS, JavaScript, JQuery, SQL, C++</li>
+							<li><b>Tools/environments</b> (basic familiarity): Eclipse, Git, Visual Studio, Linux</li>
+
 						</ul>
 					</h3>
-					<hr />
-					<h3>Volunteer experience</h3>
-						<p><b>Environmental Education Alternative Spring Break,</b> UW Pipeline Project (Spring 2014)</b>
-						<ul>
-							<li>Taught environmental science lessons to 5th graders in Kalama, WA</li>
-							<li>Planned and implemented innovative activities with team</li>
-						</ul>
-						
-						<p><b>Youth Nature Educator,</b> Empowered Eco-Education (Winter 2014)</b>
-						<ul>
-							<li>Communicated environmental concepts to small groups of 2nd/3rd graders through explanations and hands-on activities</li>
-							<li>Cooperated with team and local organizations to design curricula </li>
-						</ul>
-					<hr />
-					<h3>Activities, interests, and other skills</h3>
-						<p><b>Natural languages:</b> English (fluent), Spanish (basic), Mandarin Chinese (basic)</p>
-						<p><b>Knowledge of:</b> ArcGIS, Inkscape, Microsoft Office</p>
-						<p><b><a href="Interests.html">Interests:</a></b> piano, chess, environmental education, hiking, map design, transportation planning</p>
-						<p><b>Member of:</b>  ACM (Association for Computing Machinery), UW Earth Club, Environmental Alternative Spring Break (environmental education), Huskies for Kids</p>
 			</div>
 		</div>
 	</body>

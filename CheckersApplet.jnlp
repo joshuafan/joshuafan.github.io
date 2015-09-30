@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jnlp spec="1.0+" codebase="" href="">
+    <information>
+        <title>Checkers Applet</title>
+        <vendor>Joshua Fan</vendor>
+    </information>
+    <resources>
+        <!-- Application Resources -->
+        <j2se version="1.7+"
+            href="http://java.sun.com/products/autodl/j2se" />
+        <jar href="CheckersAppletJar.jar" />
+
+    </resources>
+    <applet-desc 
+         name="CheckersApplet"
+         main-class="checkersPackage/CheckersApplet.class"
+         width="400"
+         height="520">
+     </applet-desc>
+     <update check="background"/>
+</jnlp>  

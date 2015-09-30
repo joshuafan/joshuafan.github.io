@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Quiz App</title>
+		<link href="QuizAppStylesheet.css" type="text/css" rel="stylesheet" />
+		<script src="jquery-1.11.3.js"></script>
+		<script src="QuizAppScript.js" type="text/javascript"></script>
+	</head>
+	
+	<body>
+		<h1>Quiz yourself!</h1>
+		<div id="main">
+			<div id="settings">
+				<h2>Settings</h2>
+				<p>Select your <b>quiz topic</b>:
+				<select id="quizzes">
+				</select>
+				
+				<!--NOTE: I'm currently developing a page that will allow the user to create their own quiz. -->
+				<!--<br><span class="small"><em>Don't see the quiz you want? <a href="CreateQuiz.html">Create your own,</a> or <a href="EditQuiz.html">edit an existing quiz!</a></em></span></p>-->
+				<br><span class="small"><em>Note: I'm working on a page that will allow you to create your own quizzes.</em></span></p>
+				
+				<p><b>Time limit: </b><input id="time_limit" type="text" size="3" maxlength="3" value="10"></input> seconds (for no time limit, enter 0)</p>
+				<p>Select your <b>quiz format</b>:
+				<select id="quiz_type">
+					<option value="multiple_choice">Multiple choice</option>
+					<option value="type">Type your answer</option>
+				</select></p>
+				
+				<div id="select_question">
+				</div>
+				
+				<!-- NOTE: I'm planning to add an option where the app will try to ask questions targeted at the user's weaknesses (to improve learning), as well
+				     as another option where the app will attempt to help the user learn the material from scratch. However, this is not supported yet;
+				
+				<p>Which mode do you want?
+					<br> <input type="radio" id="review" checked="checked"><b>Review mode:</b> Run through all questions once in a random order. (Choose this if you've already studied, and just want to make sure you remember everything.)</input>
+					<br> <input type="radio" id="learning"><b>Learning mode:</b> The program will keep asking questions, but with an emphasis on questions you have difficulty on. (Choose this if you know some of the answers already, but not all.)</input>
+					<br> <input type="radio" id="starting"><b>Just starting mode:</b> The program will help you learn the questions a few at a time, and quiz you as you go along. (Choose this choice if you're completely new to this topic.)</input>
+				</p>-->
+			
+				<button id="start_button">Start quiz!</button>
+			</div>
+		</div>
+		<div id="quiz_space">
+			<!--Where the question will appear-->
+			<p id="pause_message"></p>
+			<p id="question"></p>
+			<div id="input_space">
+			</div>
+			<div id="options"></div>
+			
+			<!--Where the results will appear-->
+			<h3 id="results_title"></h3>
+			<div id="table"></div>
+			
+			<!--Where the submit button will appear-->
+			<div id="submit_button"></div>
+			<p id="press_enter"></p>
+			
+			<!--Two fieldsets: time and score-->
+			<div id="outer_fieldset">
+				<div id="fieldsets">
+					<fieldset>
+						<legend>Time</legend>
+						<div id="sec"><span id="time"></span><span id="time_unit">sec</span></div>
+					</fieldset>
+					<fieldset>
+						<legend>Score</legend>
+						<div>
+							<span id="correct">0</span> / <span id="total">0</span> <span id="percent"></span>
+						</div>
+					</fieldset>
+				</div>
+			</div>
+			
+			<!--Where the message (correct/incorrect) will appear-->
+			<p id="message"></p>
+			
+			<!--Where the Pause/Resume and Start Over buttons will appear-->
+			<div id="buttons">
+				<span id="pause_button"></span>
+				<span id="start_over_button"></span>
+			</div>
+		</div>
+	</body>
+</html>
