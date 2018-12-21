@@ -20,37 +20,74 @@
 				<li><a href="index.html">Home</a></li>
 				<li><a href="Projects.html">Projects</a></li>
 				<li><a href="Interests.html">Interests</a></li>
-				<li><a href="Resume.html">R&#233;sum&#233;<a></li> <!--resume-->
+				<li><a href="Resume.html">R&#233;sum&#233;/CV<a></li> <!--resume-->
 				<li><a href="Contact.html" class="selected_tab">Contact me</a></li>
 			</ul>
 		</div>
 		
-		<div id="aboutme">
-			<h2>About me</h2>
-			<p>I am a senior studying Computer Science at the University of Washington, who
-				is enrolled in UW Computer Science & Engineering's
-				<a href="https://www.cs.washington.edu/prospective_students/bsms/whybsms">5th-year
-				MS program</a>. I am very interested in statistical
-				machine learning and algorithms, as well as how these techniques can be applied in fascinating areas
-				such as computational biology and natural language processing.</p>
-				
-			<p>Outside of computer science,
-				I also have interests in
-				transportation planning, map design, geography, and education. I love
-				learning new technologies, expanding my knowledge, and solving challenging problems. 
-				I also enjoy playing the piano and the clarinet, reading about miscellaneous topics
-				on the internet, travelling, and hiking.</p>
-			<p><em>Explore my <a href="Interests.html">interests</a>, view my <a href="Projects.html">projects</a>, or go over my <a href="Resume.html">r&#233;sum&#233</a> here on my website!</em></p>
-			<p><b>Email:</b> jyf2(at)uw.edu<br><b>Links:</b> <a href="https://www.linkedin.com/pub/joshua-fan/89/3a7/654">LinkedIn</a> |
-								<a href="https://github.com/joshuafan">GitHub</a> |
-								<a href="https://www.facebook.com/joshua.yongshin">Facebook</a></p>
-		</div>
 		
-		<div id="main">
-			<h2>Projects</h2>
-				<b>Note:</b> Information on recent class projects can be found on my <a href="Joshua Fan resume.pdf">r&#233;sum&#233</a>.
+		
+		<div id="main_text">
+		<h2>Projects</h2>
+		Here are some projects I have worked on, primarily in classes. For work experience, see my <a href="files/Joshua Fan resume.pdf">resume</a>.
+		
+		<h3>Edit Embedding via Reinforcement Learning (with Shunfu Mao)</h3>
+		
+		<p>The goal of this project was to learn an embedding for edit distance, such that the Hamming distance
+		between the two embedded strings approximates the true edit distance between the original strings.
+		This embedding would allow clustering by edit distance to be done more efficiently (with applications
+		to RNA transcriptome analysis, and protein analysis, and spell checking). We attempted to use 
+		Seq2Seq neural networks with attention to first learn an existing edit embedding, and use the
+		REINFORCE algorithm to improve it. Unfortunately, initial results were not positive, but I hope
+		to revisit this problem.</p>
+		
+		<p><em><a href="http://joshuafan.github.io/files/EditEmbed_Poster.pdf">Poster</a> | 
+		<a href="http://joshuafan.github.io/files/EditEmbed_Final_Report.pdf">Report</a></em></p>
 
-				<h3>Checkers</h3>
+		</hr>
+		<h3>Optimization Algorithms for Single-Cell Transcriptome Analysis (with Sumit Mukherjee)</h3>
+
+		<p>During a graduate Machine Learning course, we worked on solving a variant of a matrix factorization problem
+		more efficiently to infer cell types from single-cell transcriptomic data. Previous approaches relied on very
+		slow optimization procedures, and we sought to improve that. We implemented various online optimization
+		algorithms and techniques 
+		(such as Stochastic Gradient Descent, Stochastic Variance Reduced Gradient, and Adagrad) in Matlab and Python
+		to minimize the loss function more efficiently. We compared the convergence rates of these methods and verified
+		that the cell archetypes identified were usable for downstream applications such as lineage estimation.</p>
+		
+		<p><em><a href="http://joshuafan.github.io/files/CSE_547_Poster.pdf">Poster</a> | 
+		<a href="http://joshuafan.github.io/files/CSE_547_Final_Report.pdf">Report</a></em></p>
+
+		</hr>
+		<h3>Storage and Retrieval of Robotic Laser Range Data in Database Systems (with Kaiyu Zheng)</h3>
+
+		<p>For my graduate Databases course project, Kaiyu Zheng and I implemented a database for laser-range scans
+		to allow for efficient content-based querying and retrieval of images. We used the Bag-of-Visual-Words 
+		representation to store images as feature vectors, and implemented the Flexible Image Database System
+		and Locality Sensitive Hashing techniques to speed up nearest-neighbor search. This could be used to 
+		expand image training data sets by inferring labels for unseen images based on similar images.</p>
+		
+		<p><em><a href="http://joshuafan.github.io/files/CSE_544_Poster.pdf ">Poster</a> | 
+		<a href="http://joshuafan.github.io/files/CSE_544_Poster.pdf ">Report</a></em></p>	
+
+		</hr>
+		<h3>Political Speech Clustering (with Irina Tolkova)</h3>
+		<p>For my undergraduate Machine Learning course project, Irina Tolkova and I implemented several document
+		clustering techniques, such as K-Means++, bisecting K-Means, and spectral clustering, and applied them 
+		on top of tf-idf vectors for 2016 political campaign speeches. These algorithms produced interesting
+		and interpretable clusters of speeches by candidates and issues.
+		<p><em><a href="http://joshuafan.github.io/files/CSE_446_Final_Report.pdf">Report</a></em></p>
+
+		</hr>
+		<h3>Contextual Bandits notes (with Lalit Jain, Neeraja Abhyankar, Kunhui Zhang)</h3>
+		For an Online and Adaptive Machine Learning course, I worked with two other graduate students and a postdoc
+		(Lalit Jain) to survey recent research on contextual bandits and create a report synthesizing important results
+		from that area.
+		
+		<p><em><a href="https://courses.cs.washington.edu/courses/cse599i/18wi/resources/lecture10/lecture10.pdf">Report</a></em></p>
+
+
+				<!--<h3>Checkers</h3>
 					<p>I implemented a game of checkers as a Java applet. I made this applet primarily to practice graphics programming and event handling using Java, which were topics that
 							were not covered very much in the Introductory Java class I took. I had to come up with an adequate object-oriented organizational
 							structure to handle the board and moves.</p>
@@ -75,5 +112,5 @@
 							This involved implementing and using a variety of data structures (including a self-balancing binary tree, hashtable, a modified form of a linked list, and
 							a max-heap) and sorting algorithms (such as merge sort, insertion sort, and heap sort).
 		</div>				
-	</body>
+	</body>-->
 </html>
