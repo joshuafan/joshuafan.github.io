@@ -21,13 +21,54 @@
 				<li><a href="Resume.html">CV<a></li> <!--resume-->
 				<li><a href="Contact.html" class="selected_tab">Contact me</a></li>
 				<li><a href="Projects.html">Projects</a></li>
-				<li><a href="Interests.html">Interests</a></li>
 			</ul>
 		</div>
 		
+		<h2>Selected Projects</h2>
+
+		<h3>Monitoring Vegetation from Space at Extremely Fine Resolutions via Coarsely Supervised U-Net</h3>
+		
+		<p><em>Joint work with Di Chen, Jiaming Wen, Ying Sun, Carla Gomes</em></p>
+		<img src="imgs/cs-sunet.png" />
+
+		<p>Solar-induced chlorophyll fluorescence (SIF) is a powerful tool to measure plant productivity from space. However, satellites can only measure SIF at a coarse spatial resolution. For example, we only know the average SIF of a 3x3 km tile, and cannot distinguish how individual farms are doing. To address this, we worked with plant scientists to develop Coarsely-Supervised Smooth U-Net (CS-SUNet). CS-SUNet takes in fine-resolution satellite imagery (Landsat), and predicts SIF for each 30m pixel, even though we only have labels at a much coarser resolution (3km). Even though the supervision is extremely weak, the model can produce accurate fine-resolution predictions thanks to strong regularization techniques (smoothness loss, early stopping) that encourage pixels with similar input features to have similar SIF predictions. Our method resolves fine-grained variations in SIF more accurately than existing methods.</p>
+		
+		<p>For more details, see this paper (IJCAI 2022):</p>
+		
+		<p>[1] Joshua Fan, Di Chen, Jiaming Wen, Ying Sun, Carla Gomes. <a href="https://arxiv.org/pdf/2207.08022">"Monitoring Vegetation from Space at Extremely Fine Resolutions via Coarsely-Supervised Smooth U-Net.”</a> In <em>Proceedings of the Thirty-First International Joint Conference on Artificial Intelligence (IJCAI-22)</em>, AI for Good track, 5066-5072.
+
+
+		<h3>Interpretable Spatiotemporal Deep Learning for Crop Yield Forecasting </h3>
+
+		<p><em>Joint work with Junwen Bai, Zhiyun Li, Kaitlyn Chen, Ariel-Ortiz Bobea, Carla Gomes</em></p>
+		<img src="imgs/cornyield_2012_fractiondeviation.png" />
+
+		<p>Forecasting crop yields accurately is crucial for food security and poverty alleviation. In collaboration with agricultural economists, we have developed deep learning techniques to forecast crop yields for US counties from a complex array of weather, soil, and management data. We use 1D CNNs to model temporal structure, and a “county embedding” and graph neural network to model spatial structure [2]. We have adapted interpretability techniques to temporal data to understand model predictions. Our model performs comparably to the USDA forecast in August and September. We are working on further improvements, such as using hypernetworks to account for spatial heterogeneity in the prediction function, and developing a variant of the Transformer architecture with inductive biases to handle the continuous nature of time series data.</p>
+		
+		<p>Some of this work was presented in this AAAI 2022 paper:</p>
+		
+		<p>[2] Joshua Fan*, Junwen Bai*, Zhiyun Li*, Ariel Ortiz-Bobea, Carla Gomes. <a href="https://ojs.aaai.org/index.php/AAAI/article/view/21444/21193">"A GNN-RNN Approach for Harnessing Geospatial and Temporal Information: Application to Crop Yield Prediction.”</a> In <em>Proceedings of the AAAI Conference on Artificial Intelligence (AAAI-22)</em>, AI for Social Impact track, 11873-11881.
+		
+
+		<h3>Aquaculture pond mapping with deep learning</h3>
+
+		<p><em>Joint work with Laura Greenstreet, Felipe Siqueira Pacheco, Yiwei Bai, Marta Eichemberger Ummus, Carolina Doria, Nathan Oliveira Barros, Bruce R Forsberg, Xiangtao Xu, Alexander Flecker, Carla Gomes. </em></p>
+	
+		<img src="imgs/fish-pond.png" />
+
+		<p>Ecologists are interested in understanding the environmental impact of aquaculture expansion in the Amazon, yet there is little data on where fish farms are located. I am working with collaborators to create methods to detect fish farms from remote sensing imagery. Since there is little labeled data, I developed contrastive learning methods to leverage large amounts of unlabeled images to learn a better representation of each waterbody. This required designing novel augmentations to deal with multispectral images, emphasize the shape of waterbodies, and remove information from the irrelevant background landscape. Our learned representations significantly improved the model’s ability to generalize to new regions with little data. Some of this work was published in a KDD workshop paper [3], and we are continuing to work on making our methods more robust.</p>
+		
+		[3] Laura Greenstreet, Joshua Fan, Felipe Siqueira Pacheco, Yiwei Bai, Marta Eichemberger Ummus, Carolina Doria, Nathan Oliveira Barros, Bruce R Forsberg, Xiangtao Xu, Alexander Flecker, Carla Gomes. <a href="https://openreview.net/pdf?id=bubbXBDDbJ">Detecting Aquaculture with Deep Learning in a Low-Data Setting."</a> <em>Fragile Earth workshop at KDD 2023.</em> Long Beach, CA, USA. 
 		
 		
-		<div id="main_text">
+
+		
+		
+
+		
+		
+		
+		<!--<div id="main_text">
 		<h2>Projects</h2>
 		<p><b>Note: these are mostly old class projects. See my <a href="files/Joshua_Fan_CV.pdf">CV</a> for more recent information.</b></p>
 		
@@ -84,7 +125,7 @@
 		(Lalit Jain) to survey recent research on contextual bandits and create a report synthesizing important results
 		from that area.
 		
-		<p><em><a href="https://courses.cs.washington.edu/courses/cse599i/18wi/resources/lecture10/lecture10.pdf">Report</a></em></p>
+		<p><em><a href="https://courses.cs.washington.edu/courses/cse599i/18wi/resources/lecture10/lecture10.pdf">Report</a></em></p>-->
 
 
 				<!--<h3>Checkers</h3>
