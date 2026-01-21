@@ -27,6 +27,29 @@
 		<div id="main_text">
 		<h2>Selected Projects</h2>
 
+		<h3>Scientifically-Interpretable Reasoning Network (ScIReN): Discovering Hidden Relationships in the Soil Carbon Cycle</h3>
+
+		<p><em>Joint work with Haodi Xu, Feng Tao, Md Nasim, Marc Grimson, Lifen Jiang, Fengqi You, Benjamin Z. Houlton, Ying Sun, Yiqi Luo, Carla Gomes.</em></p>
+
+		<img src="imgs/sciren_structure_2.png" />
+		
+		<p>Soils have the potential to mitigate climate change by sequestering carbon from the atmosphere. Yet it is difficult to
+		understand how carbon flows through the soil, leading to high uncertainties in future climate projections. While scientists
+		have developed process-based simulations to model the carbon cycle, they contain numerous unknown parameters that govern key
+		biogeochemical processes, which are traditionally set in an ad-hoc way that results in poor accuracy. We have developed techniques
+		to integrate the scientific knowledge encoded in these process-based models with data-driven deep learning,
+		to seamlessly learn parameter values across space [1]. On top of that, we developed Scientifically-Interpretable Reasoning Network (ScIReN),
+		a fully transparent tramework that uses Kolmogorov-Arnold Networks to reveal functional relationships between environmental inputs
+		and unobserved biogeochemical processes [2].  Our approach has excellent predictive accuracy,
+		respects existing science, and allows us to infer unobserved biogeochemical processes and their functional relationships with environmental inputs.
+
+		<p><b>For more information</b>, see our <a href=="https://arxiv.org/pdf/2506.14054">paper</a>, <a href="https://github.com/gomes-lab/ScIReN"> code</a>, <a href="files/ScIReN_slides.pdf">slides</a>, or <a href="files/ScIReN_poster.pdf">poster</a>.</p>
+
+		<p>[1] Haodi Xu*, <b>Joshua Fan*</b>, Feng Tao*, Lifen Jiang, Fengqi You, Benjamin Z. Houlton, Ying Sun, Carla P. Gomes, Yiqi Luo. <a href="https://arxiv.org/pdf/2502.00672">"Biogeochemistry-Informed Neural Network (BINN) for Improving Accuracy of Model Prediction and Scientific Understanding of Soil Organic Carbon."</a> Under review at Geoscientific Model Development (GMD).</p>
+
+		<p>[2] <b>Joshua Fan*</b>, Haodi Xu*, Feng Tao*, Md Nasim, Marc Grimson, Yiqi Luo, Carla P. Gomes. <a href="https://arxiv.org/pdf/2506.14054">"Scientifically-Interpretable Reasoning Network (ScIReN): Uncovering the Black-Box of Nature."</a> To appear in AAAI 2026, AI for Social Impact track.</p>
+
+
 		<h3>Monitoring Vegetation from Space at Extremely Fine Resolutions via Coarsely Supervised U-Net</h3>
 		<p><em>Joint work with Di Chen, Jiaming Wen, Ying Sun, Carla Gomes</em></p>
 		<img src="imgs/cs-sunet.png" />
@@ -43,7 +66,7 @@
 		
 		<p>For details, see this paper (IJCAI 2022):</p>
 		
-		<p>[1] <b>Joshua Fan</b>, Di Chen, Jiaming Wen, Ying Sun, Carla Gomes. <a href="https://arxiv.org/pdf/2207.08022">"Monitoring Vegetation from Space at Extremely Fine Resolutions via Coarsely-Supervised Smooth U-Net.”</a> In <em>Proceedings of the Thirty-First International Joint Conference on Artificial Intelligence (IJCAI-22)</em>, AI for Good track, 5066-5072.
+		<p>[3] <b>Joshua Fan</b>, Di Chen, Jiaming Wen, Ying Sun, Carla Gomes. <a href="https://arxiv.org/pdf/2207.08022">"Monitoring Vegetation from Space at Extremely Fine Resolutions via Coarsely-Supervised Smooth U-Net.”</a> In <em>Proceedings of the Thirty-First International Joint Conference on Artificial Intelligence (IJCAI-22)</em>, AI for Good track, 5066-5072.
 
 
 		<h3>Interpretable Spatiotemporal Deep Learning for Crop Yield Forecasting </h3>
@@ -54,35 +77,16 @@
 		<p>Forecasting crop yields accurately is crucial for food security and poverty alleviation. In collaboration
 		with agricultural economists, we have developed deep learning techniques to forecast crop yields for US counties
 		from a complex array of weather, soil, and management data. We use 1D CNNs to model temporal dependencies within a year, and a 
-		“county embedding” and graph neural network to model spatial structure [2]. We have adapted interpretability techniques such
+		“county embedding” and graph neural network to model spatial structure [4]. We have adapted interpretability techniques such
 		as Intergrated Gradients to temporal data to understand model predictions. Our model performs comparably to the USDA forecast
 		in August and September. As a followup, we also developed a variant of the Transformer architecture, where attention scores depend purely
 		on relative distance, and inject inductive biases such as locality and smoothness to handle the continuous nature of time series data.</p>
 				
-		<p>[2] <b>Joshua Fan*</b>, Junwen Bai*, Zhiyun Li*, Ariel Ortiz-Bobea, Carla Gomes. <a href="https://ojs.aaai.org/index.php/AAAI/article/view/21444/21193">"A GNN-RNN Approach for Harnessing Geospatial and Temporal Information: Application to Crop Yield Prediction.”</a> In <em>Proceedings of the AAAI Conference on Artificial Intelligence (AAAI-22)</em>, AI for Social Impact track, 11873-11881.
+		<p>[4] <b>Joshua Fan*</b>, Junwen Bai*, Zhiyun Li*, Ariel Ortiz-Bobea, Carla Gomes. <a href="https://ojs.aaai.org/index.php/AAAI/article/view/21444/21193">"A GNN-RNN Approach for Harnessing Geospatial and Temporal Information: Application to Crop Yield Prediction.”</a> In <em>Proceedings of the AAAI Conference on Artificial Intelligence (AAAI-22)</em>, AI for Social Impact track, 11873-11881.
 
-		<!--<p>[3] <b>Joshua Fan*</b>, Kaitlyn Chen*, Shufeng Kong, Junwen Bai, Zhiyun Li, Ariel Ortiz-Bobea, Carla Gomes. <a href="https://joshuafan.github.io/files/Fan2026_Locality_Distance_Aware_Attention.pdf">Locality and Distance-Aware Attention for Time Series Extrinsic Regression.</a> Under review at AAAI 2026.</p>-->
+		<!--<p>[5] <b>Joshua Fan*</b>, Kaitlyn Chen*, Shufeng Kong, Junwen Bai, Zhiyun Li, Ariel Ortiz-Bobea, Carla Gomes. <a href="https://joshuafan.github.io/files/Fan2026_Locality_Distance_Aware_Attention.pdf">Locality and Distance-Aware Attention for Time Series Extrinsic Regression.</a> Under review at AAAI 2026.</p>-->
 
 
-		<h3>Scientifically-Interpretable Reasoning Network (ScIReN): Discovering Hidden Relationships in the Soil Carbon Cycle</h3>
-
-		<p><em>Joint work with Haodi Xu, Feng Tao, Md Nasim, Marc Grimson, Lifen Jiang, Fengqi You, Benjamin Z. Houlton, Ying Sun, Yiqi Luo, Carla Gomes.</em></p>
-
-		<img src="imgs/sciren_structure.png" />
-		
-		<p>Soils have the potential to mitigate climate change by sequestering carbon from the atmosphere. Yet it is difficult to
-		understand how carbon flows through the soil, leading to high uncertainties in future climate projections. While scientists
-		have developed process-based simulations to model the carbon cycle, they contain numerous unknown parameters that govern key
-		biogeochemical processes, which are traditionally set in an ad-hoc way that results in poor accuracy. We have developed techniques
-		to integrate the scientific knowledge encoded in these process-based models with data-driven deep learning,
-		to seamlessly learn parameter values across space [3]. On top of that, we develop inherently interpretable models built on
-		Kolmogorov-Arnold Networks to transparently reveal simple functional relationships between these
-		parameters (representing biogeochemical processes) and environmental drivers [4]. Our approach has excellent predictive accuracy,
-		respects existing science, and allows us to infer unobserved biogeochemical processes and their functional relationships with environmental inputs.
-
-		<p>[3] Haodi Xu*, <b>Joshua Fan*</b>, Feng Tao*, Lifen Jiang, Fengqi You, Benjamin Z. Houlton, Ying Sun, Carla P. Gomes, Yiqi Luo. <a href="https://arxiv.org/pdf/2502.00672">"Biogeochemistry-Informed Neural Network (BINN) for Improving Accuracy of Model Prediction and Scientific Understanding of Soil Organic Carbon."</a> Under review at Geoscientific Model Development (GMD).</p>
-
-		<p>[4] <b>Joshua Fan*</b>, Haodi Xu*, Feng Tao*, Md Nasim, Marc Grimson, Yiqi Luo, Carla P. Gomes. <a href="https://arxiv.org/pdf/2506.14054">"Scientifically-Interpretable Reasoning Network (ScIReN): Uncovering the Black-Box of Nature."</a> To appear in AAAI 2026, AI for Social Impact track.</p>
 
 
 		<h3>Aquaculture pond mapping with shape-aware contrastive learning</h3>
